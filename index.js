@@ -148,6 +148,8 @@ Truck.prototype.specific = function(weight) {
 		console.log ("Тягнення навантаження...")
 	}
 }
+
+
 // Додатковий метод specific для прототипу Trucks, примає число якщо воно більше towingCapacity виводить рядок в консоль: Навантаження занадто важке для буксирування, якщо ні то рядок Тягнення навантаження...
 
 // Створюємо новий екземпляр об'єкта Truck
@@ -185,11 +187,11 @@ const myTruck = {
 
 // Викликаємо метод tow з вагою меншою за towingCapacity
 
-// myTruck.prototype.tow(`${this.towingCapacity} - 1`)
+// myTruck.tow(myTruck.weight - 1);
 
 // Викликаємо метод tow з вагою більшою за towingCapacity
 
-// myTruck.prototype.tow(`${this.towingCapacity} + 1`)
+// myTruck.tow(myTruck.weight + 1);
 
 // Додаємо метод drive для прототипу Car, який збільшує kilometers на передане число, та виводить Подорожуємо <kilometers> кілометрів у <brand> <model>.
 Car.prototype.drive = function (drive) {
